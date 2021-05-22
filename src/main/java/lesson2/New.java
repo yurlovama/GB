@@ -2,10 +2,14 @@ package lesson2;
 
 public class New {
     public static void main(String[] args) {
-        within10and20( 5,6);
+        boolean isMoreTenLessTwenty =  within10and20( 5,6);
+        System.out.println(isMoreTenLessTwenty ? "Больше 10 но меньше 20" : "Не находится в пределах от 10 до 20");
         isPositiveOrNegative(-6);
-        isNegative ( -9);
+        boolean isNegative = isNegative ( -9);
+        System.out.println(isNegative ? "Отрицательное" : "Положительное");
         printWordNTimes ("test", 15);
+        boolean year = year(2020);
+        System.out.println(year ? "Високосный" : "Обычный");
 
     }
 
@@ -29,9 +33,9 @@ public class New {
     }
     public static boolean isNegative(int a) {
         if (a >= 0) {
-            return true;
+            return false;
         } else {
-        return false;
+            return true;
         }
     }
     public static void printWordNTimes(String word, int times) {
@@ -39,5 +43,14 @@ public class New {
             System.out.printf("i = %d" + " word -  %s%n", i, word);
         }
         System.out.println();
+    }
+    public static Boolean year (int year) {
+        if (year % 4 != 0) {
+            return false;
+        } else if (year % 100 == 0 && year % 400 != 0) {
+            return false;
+        } else {
+            return true;
+        }
     }
 }
