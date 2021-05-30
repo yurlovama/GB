@@ -31,11 +31,9 @@ public class MainApp {
         int value = -10;
         if  (value >100) {
             System.out.println("Зеленый");
-        }
-        else if  (value <=0) {
+        } else if  (value <=0) {
             System.out.println("Красный");
-        }
-        else {
+        } else {
             System.out.println("Желтый");
         }
     }
@@ -45,8 +43,7 @@ public class MainApp {
         int a = 5, b = 3;
         if  ( a >= b) {
             System.out.println("a >= b" );
-        }
-        else {
+        } else {
             System.out.println("a < b");
         }
     }
