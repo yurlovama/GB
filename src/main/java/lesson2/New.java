@@ -32,11 +32,7 @@ public class New {
 
     }
     public static boolean isNegative(int a) {
-        if (a >= 0) {
-            return false;
-        } else {
-            return true;
-        }
+        return  a < 0;
     }
     public static void printWordNTimes(String word, int times) {
         for (int i = 0; i < times; i++ ) {
